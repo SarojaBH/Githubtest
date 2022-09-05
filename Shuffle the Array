@@ -1,0 +1,24 @@
+ Scanner sc =new Scanner(System.in);
+      int n=sc.nextInt();
+      int d=2*n;
+      int a[]=new int[d];
+       int b[]=new int[d];
+      for(int i=0;i<d; i++)
+        {
+          a[i]=sc.nextInt();
+        }
+      for(int i=0 ;i<d-1;i++)
+        {
+          if(i%2==0)
+          {
+            b[i]=a[i/2];
+          }
+          else
+          {
+            b[i]=a[n+i];
+          }
+        }
+      for(int i=0;i<d ; i++)
+        {
+          System.out.print(b[i] + " ");
+        }
